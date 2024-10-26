@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1f1d2b;
+  /* background-color: #3d394d; */
+  /* background-color: #252432; */
+}
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #fdfeff;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    /* @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none; */
+    /* #f3f1ff */
+    @apply w-full text-sm bg-[#f3f1ff] px-5 py-3 rounded-xl mb-4 outline-none placeholder:text-gray-600;
+  }
+  .btn-primary {
+    @apply w-full text-sm cursor-pointer bg-background text-white px-2 py-3 rounded-xl my-1 hover:bg-[#6f6fc8];
+  }
+  .grey-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+  .deeper-shadow {
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .small-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .smooth-transition {
+    transition: 0.2s ease-in-out;
+  }
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer hover:text-primary smooth-transition bg-tertiary;
+  }
+  .input-label {
+    @apply text-xs text-gray-200;
+  }
+  .bg-design {
+    /* background-image: url(assets/images/bg-design.png); */
+    background-size: cover;
+  }
+}
