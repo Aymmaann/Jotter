@@ -22,8 +22,6 @@ body {
 
 @layer components {
   .input-box {
-    /* @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none; */
-    /* #f3f1ff */
     @apply w-full text-sm bg-[#f3f1ff] px-5 py-3 rounded-xl mb-4 outline-none placeholder:text-gray-600;
   }
   .btn-primary {
@@ -33,7 +31,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   }
   .deeper-shadow {
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .small-shadow {
@@ -47,9 +44,5 @@ body {
   }
   .input-label {
     @apply text-xs text-gray-200;
-  }
-  .bg-design {
-    /* background-image: url(assets/images/bg-design.png); */
-    background-size: cover;
   }
 }

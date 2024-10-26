@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import PasswordInput from "../../components/Input/PasswordInput";
 import { validateEmail } from "../../utils/helper";
 import axiosInstance from "../../utils/axiosInstance";
-import LoginGuy from "../../assets/images/notepad.png";
+import Notepad from "../../assets/images/notepad.png";
 
 const Login = () => {
     const [email, setEmail] = useState("")
@@ -86,8 +86,8 @@ const Login = () => {
                     </div>
                 </div>
 
-                <div className="bg-[#aa9de7] w-96 h-[354px] rounded-r-2xl bg-design flex justify-center items-center">
-                    <img src={LoginGuy} className="w-64" />
+                <div className="bg-[#aa9de7] w-96 h-[354px] rounded-r-2xl flex justify-center items-center">
+                    <img src={Notepad} className="w-64" />
                 </div>
             </div>
         </>
