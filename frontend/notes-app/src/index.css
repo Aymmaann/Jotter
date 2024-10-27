@@ -43,4 +43,8 @@ body {
   .input-label {
     @apply text-xs text-gray-200;
   }
+  .bg-img {
+    background-image: url("assets/images/purple-nobg.png");
+    background-size: contain;
+  }
 }
