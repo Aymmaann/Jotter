@@ -86,7 +86,7 @@ const Login = () => {
                     </div>
                 </div>
 
-                <div className="bg-[#aa9de7] w-96 h-[354px] rounded-r-2xl flex justify-center items-center p-6">
+                <div className="bg-[#aa9de7] w-96 h-[369px] rounded-r-2xl flex justify-center items-center p-6">
                     <div className="flex flex-col justify-center items-center bg-background rounded-xl w-full h-full grey-shadow">
                         <p className="text-white">All your notes in one place!</p>
                         <img src={Notepad} className="w-60" />
