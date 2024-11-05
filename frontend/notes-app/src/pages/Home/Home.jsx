@@ -187,11 +187,11 @@ const Home = () => {
                     onRequestClose={() => {}}
                     style={{
                         overlay: {
-                            backgroundColor: "rgba(0,0,0,0.2)",
+                            backgroundColor: "rgba(0,0,0,0.6)",
                         },
                     }}
                     contentLabel=""
-                    className="w-[40%] max-h-3/4 bg-lightPurple rounded-xl mx-auto mt-20 p-5 overflow-scroll"
+                    className="w-[40%] max-h-3/4 bg-background rounded-xl mx-auto mt-20 p-7 overflow-scroll"
                 >
                 <AddEditNotes
                     type={openAddEditModal.type}

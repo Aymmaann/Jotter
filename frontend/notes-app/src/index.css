@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #1f1d2b;
+  background-color: #f8f8ff;
 }
 
 @layer base {
@@ -41,7 +41,7 @@ body {
     @apply text-xl text-slate-300 cursor-pointer hover:text-primary smooth-transition bg-tertiary;
   }
   .input-label {
-    @apply text-xs text-gray-200;
+    @apply text-xs text-[#f8f8ff];
   }
   .bg-img {
     background-image: url("assets/images/purple-nobg.png");

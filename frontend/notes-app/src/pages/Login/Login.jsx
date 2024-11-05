@@ -53,7 +53,7 @@ const Login = () => {
         <>
             <Navbar />
 
-            <div className="flex rounded-2xl w-full justify-center items-center mt-28 h-[408px]">
+            <div className="flex rounded-2xl w-full justify-center items-center mt-28 h-[408px] ">
                 <div className="flex items-center justify-center">
                     <div className="w-96 border rounded-l-2xl bg-white px-7 py-10 grey-shadow">
                         <form onSubmit={handleLogin}>
@@ -87,7 +87,7 @@ const Login = () => {
                 </div>
 
                 <div className="bg-[#aa9de7] w-96 h-[354px] rounded-r-2xl flex justify-center items-center p-6">
-                    <div className="flex flex-col justify-center items-center bg-background rounded-xl w-full h-full">
+                    <div className="flex flex-col justify-center items-center bg-background rounded-xl w-full h-full grey-shadow">
                         <p className="text-white">All your notes in one place!</p>
                         <img src={Notepad} className="w-60" />
                     </div>

@@ -31,7 +31,7 @@ const TagInput = ({ tags, setTags }) => {
                 {tags?.length > 0 && (
                     <div className="flex items-center gap-2 flex-wrap mt-2 ">
                         {tags.map((tag, index) => (
-                            <span key={index} className="flex items-center gap-2 text-sm text-gray-200 bg-background px-3 py-1 rounded">#{tag} 
+                            <span key={index} className="flex items-center gap-2 text-sm text-background bg-[#f8f8ff] px-3 py-1 rounded">#{tag} 
                                 <button onClick={() => {handleRemoveTag(tag)}}>
                                     <MdClose className="cursor-pointer smooth-transition hover:text-red-500"/>
                                 </button>
@@ -43,15 +43,15 @@ const TagInput = ({ tags, setTags }) => {
                 <div className="flex items-center gap-4 mt-3">
                     <input type="text"
                         value={inputValue}
-                        className="text-sm bg-background px-3 py-2 rounded-md outline-none text-white placeholder:text-gray-300"
+                        className="text-sm bg-[#f8f8ff] px-3 py-2 rounded-md outline-none text-background placeholder:text-gray-500"
                         placeholder="Add Tags"
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                     />
 
-                    <button className="cursor-pointer w-8 h-8 flex items-center justify-center rounded border-background smooth-transition bg-background hover:bg-[#6f6fc8]"
+                    <button className="cursor-pointer w-8 h-8 flex items-center justify-center rounded border-background smooth-transition bg-[#f8f8ff] hover:bg-[#6f6fc8]"
                         onClick={() => {addNewTag()}}>
-                        <MdAdd className="text-2xl text-white hover:text-gray-200"/>
+                        <MdAdd className="text-2xl text-background"/>
                     </button>
                 </div>
             </div>

@@ -17,7 +17,7 @@ const routes = (
 const App = () => {
   return(
     <>
-      <div className="bg-background">{routes}</div>
+      <div>{routes}</div>
     </>
   )
 }
