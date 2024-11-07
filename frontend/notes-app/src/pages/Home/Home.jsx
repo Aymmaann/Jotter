@@ -12,7 +12,7 @@ import EmptyCard from "../../components/EmptyCard/EmptyCard";
 import AddNotesImg from "../../assets/images/add-notes.png";
 import noDataImg from "../../assets/images/no-data.png";
 
-Modal.setAppElement('#root');
+Modal.setAppElement('#root')
 
 const Home = () => {
     const [openAddEditModal, setOpenAddEditModal] = useState({
