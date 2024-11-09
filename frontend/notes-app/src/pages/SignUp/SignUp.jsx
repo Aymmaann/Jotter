@@ -60,53 +60,49 @@ const SignUp = () => {
 
     return(
         <>
-            <Navbar />
+            <div className="absolute w-full h-full bg-[#1c0740] bg-[url('/src/assets/images/pattern-background-desktop.svg')] bg-no-repeat">
+                <div className="rounded-2xl w-full mt-32 h-[408px]">
+                    <div className="flex items-center justify-center">
+                        <div className="w-[400px] border rounded-2xl border-none bg-blackbg px-8 py-8 shadow-2xl">
+                            <form onSubmit={handleSignUp}>
+                                <h4 className="text-[26px] mt-2 mb-7 text-white">Sign Up</h4>
 
-            <div className="flex rounded-2xl w-full justify-center items-center mt-28 h-[408px]">
-                <div className="flex items-center justify-center">
-                    <div className="w-96 border rounded-l-2xl bg-white px-7 py-10 grey-shadow">
-                        <form onSubmit={handleSignUp}>
-                            <h4 className="text-2xl mb-7">Sign Up</h4>
+                                <label className="text-white text-[14px] ml-1">Name</label>
+                                <input 
+                                    type="text" 
+                                    placeholder="Name" 
+                                    className="input-box mt-1"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
 
-                            <input 
-                                type="text" 
-                                placeholder="Name" 
-                                className="input-box"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
+                                <label className="text-white text-[14px] ml-1">Email Address</label>
+                                <input 
+                                    type="text" 
+                                    placeholder="johndoe@gmail.com" 
+                                    className="input-box mt-1"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
 
-                            <input 
-                                type="text" 
-                                placeholder="Email Address" 
-                                className="input-box"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
+                                <label className="text-white text-[14px] ml-1">Password</label>
+                                <PasswordInput 
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
 
-                            <PasswordInput 
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
+                                {error && <p className="text-red-500 text-xs pb-1">{error}</p>}
 
-                            {error && <p className="text-red-500 text-xs pb-1">{error}</p>}
+                                <button type="submit" className="btn-primary smooth-transition mt-3 small-shadow">Create Account</button>
 
-                            <button type="submit" className="btn-primary smooth-transition small-shadow">Create Account</button>
-
-                            <p className="text-sm text-center mt-4">
-                                Already have an account?{" "}
-                                <Link to="/login" className="font-medium text-lightPurple underline">
-                                Login 
-                                </Link>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-
-                <div className="bg-[#aa9de7] w-96 h-[434px] rounded-r-2xl flex justify-center items-center p-7">
-                    <div className="flex flex-col justify-center items-center bg-background rounded-xl w-full h-full">
-                        <p className="text-white">All your notes in one place!</p>
-                        <img src={Notepad} className="w-60" />
+                                <p className="text-sm text-center mt-4 text-white">
+                                    Already have an account?{" "}
+                                    <Link to="/login" className="font-medium text-lightPurple underline">
+                                        Login
+                                    </Link>
+                                </p>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

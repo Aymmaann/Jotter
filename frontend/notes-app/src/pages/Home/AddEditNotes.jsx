@@ -82,9 +82,9 @@ const AddEditNotes = ({ noteData, type, onClose, getAllNotes, showToastMessage }
                 </button>
 
                 <div className="flex flex-col gap-2">
-                    <label className="input-label">TITLE</label>
+                    <label className="input-label mt-2">TITLE</label>
                     <input type="text"
-                        className="text-2xl text-background outline-none bg-[#FAF9F6] p-3 rounded-md mt-2 placeholder:text-gray-500"
+                        className="text-2xl text-background outline-none bg-[#f3f1ff] p-3 rounded-md placeholder:text-gray-500"
                         placeholder="Go To Gym At 5"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
@@ -94,7 +94,7 @@ const AddEditNotes = ({ noteData, type, onClose, getAllNotes, showToastMessage }
                 <div className="flex flex-col gap-2 mt-4">
                     <label className="input-label">CONTENT</label>
                     <textarea type="text"
-                        className="text-sm text-background outline-none bg-[#FAF9F6] p-2 rounded-md placeholder:text-gray-500"
+                        className="text-sm text-background outline-none bg-[#f3f1ff] p-2 rounded-md placeholder:text-gray-500"
                         placeholder="Content"
                         rows={10}
                         value={content}
@@ -109,7 +109,7 @@ const AddEditNotes = ({ noteData, type, onClose, getAllNotes, showToastMessage }
 
                 {error && <p className="text-red-500 text-xs pt-4">{error}</p>}
 
-                <button className="btn-primary font-medium mt-5 p-3 smooth-transition cursor-pointer bg-[#f8f8ff] text-background" onClick={handleAddNote}>
+                <button className="btn-primary font-medium mt-5 p-3 smooth-transition cursor-pointer" onClick={handleAddNote}>
                     {type === 'edit'? 'UPDATE' : 'ADD'}
                 </button>
             </div>

@@ -6,16 +6,17 @@ module.exports = {
       colors: {
         primary: "#2B85FF",
         secondary: "#EF863E",
-        tertiary: "#3c2261",
+        tertiary: "#6d28db",
         background: "#1f1d2b",
         lightPurple: "#aa9de7",
         navbg: "#0f131b",
-        blackbg: "#0C0C0C",
+        blackbg: "#020711",
         lightGray: "#d2d3d5",
       },
+      fontFamily: {
+        'fraunces': ["Fraunces"],
+      }
     },
   },
   plugins: [],
 }
-
-// 0f111a

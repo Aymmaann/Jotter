@@ -28,7 +28,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
     return(
         <>
             <div className="bg-tertiary flex items-center justify-between px-6 py-2 drop-shadow">
-                <h2 className="text-xl font-medium text-white py-2">Jotter</h2>
+                <h2 className="text-2xl font-bold text-white py-2 font-fraunces">Jotter</h2>
 
                 {userInfo && (
                     <SearchBar 

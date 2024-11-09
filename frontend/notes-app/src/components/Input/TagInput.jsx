@@ -29,7 +29,7 @@ const TagInput = ({ tags, setTags }) => {
         <>
             <div>
                 {tags?.length > 0 && (
-                    <div className="flex items-center gap-2 flex-wrap mt-2 ">
+                    <div className="flex items-center gap-2 flex-wrap mt-2">
                         {tags.map((tag, index) => (
                             <span key={index} className="flex items-center gap-2 text-sm text-background bg-[#f8f8ff] px-3 py-1 rounded">#{tag} 
                                 <button onClick={() => {handleRemoveTag(tag)}}>
@@ -43,13 +43,13 @@ const TagInput = ({ tags, setTags }) => {
                 <div className="flex items-center gap-4 mt-3">
                     <input type="text"
                         value={inputValue}
-                        className="text-sm bg-[#FAF9F6] px-3 py-2 rounded-md outline-none text-background placeholder:text-gray-500"
+                        className="text-sm bg-[#f3f1ff] px-3 py-2 rounded-md outline-none text-background placeholder:text-gray-500"
                         placeholder="Add Tags"
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                     />
 
-                    <button className="cursor-pointer w-8 h-8 flex items-center justify-center rounded border-background smooth-transition bg-[#FAF9F6] hover:bg-[#6f6fc8]"
+                    <button className="cursor-pointer w-8 h-8 flex items-center justify-center rounded border-background smooth-transition bg-[#f3f1ff] hover:bg-[#7d2ffa]"
                         onClick={() => {addNewTag()}}>
                         <MdAdd className="text-2xl text-background"/>
                     </button>
