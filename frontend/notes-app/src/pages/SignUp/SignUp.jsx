@@ -4,7 +4,6 @@ import PasswordInput from "../../components/Input/PasswordInput";
 import { Link, useNavigate } from "react-router-dom";
 import { validateEmail } from "../../utils/helper";
 import axiosInstance from "../../utils/axiosInstance";
-import Notepad from "../../assets/images/notepad.png";
 
 const SignUp = () => {
     const [name, setName] = useState("")

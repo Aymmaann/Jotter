@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
 import Toast from "../../components/ToastMessage/Toast";
 import EmptyCard from "../../components/EmptyCard/EmptyCard";
-import AddNotesImg from "../../assets/images/add-notes.png";
-import noDataImg from "../../assets/images/no-data.png";
+import AddNotesImg from "../../assets/images/addnote.png";
+import noDataImg from "../../assets/images/nodata.png"
 
 Modal.setAppElement('#root')
 

@@ -9,7 +9,7 @@ const NoteCard = ({ title, date, content, tags, isPinned, onEdit, onDelete, onPi
             <div className="border-[1px] border-zinc-800 rounded-xl p-4 bg-blackbg smooth-transition text-white hover:deeper-shadow hover:bg-tertiary">
                 <div className="flex items-center justify-between bg-transparent">
                     <div>
-                        <h6 className="text-sm font-medium">{title}</h6>
+                        <h6 className="text-sm font-semibold">{title}</h6>
                         <span className="text-xs text-gray-200">{moment(date).format('Do MMM YYYY')}</span>
                     </div>
                     <MdOutlinePushPin className={`icon-btn ${isPinned? 'text-primary' : 'text-slate-300'}`} onClick={onPinNote} />

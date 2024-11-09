@@ -13,9 +13,6 @@ module.exports = {
         blackbg: "#020711",
         lightGray: "#d2d3d5",
       },
-      fontFamily: {
-        'fraunces': ["Fraunces"],
-      }
     },
   },
   plugins: [],
