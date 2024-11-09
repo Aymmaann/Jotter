@@ -5,7 +5,7 @@ const ProfileInfo = ({ onLogout, userInfo }) => {
     return(
         <>
             <div className="flex items-center gap-3 text-white">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full font-medium bg-background">
+                <div className="w-12 h-12 flex items-center justify-center rounded-full font-medium bg-black">
                     {userInfo ? getInitials(userInfo.fullName) : ""}
                 </div>
 

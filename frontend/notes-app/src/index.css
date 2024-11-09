@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #f8f8ff;
+  /* background-color: #f8f8ff; */
+  background-color: #0C0C0C;
 }
 
 @layer base {
@@ -38,7 +39,7 @@ body {
     transition: 0.2s ease-in-out;
   }
   .icon-btn {
-    @apply text-xl text-slate-300 cursor-pointer hover:text-primary smooth-transition bg-tertiary;
+    @apply text-xl text-slate-300 cursor-pointer hover:text-primary smooth-transition bg-transparent;
   }
   .input-label {
     @apply text-xs text-[#f8f8ff];

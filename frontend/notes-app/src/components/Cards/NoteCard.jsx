@@ -6,8 +6,8 @@ import { MdCreate, MdDelete } from "react-icons/md"
 const NoteCard = ({ title, date, content, tags, isPinned, onEdit, onDelete, onPinNote }) => {
     return(
         <>
-            <div className="border-none rounded-xl p-4 bg-tertiary hover:deeper-shadow smooth-transition text-white">
-                <div className="flex items-center justify-between bg-tertiary">
+            <div className="border-[2px] border-tertiary rounded-xl p-4 bg-blackbg hover:deeper-shadow hover:bg-tertiary smooth-transition text-white">
+                <div className="flex items-center justify-between bg-transparent">
                     <div>
                         <h6 className="text-sm font-medium">{title}</h6>
                         <span className="text-xs text-gray-200">{moment(date).format('Do MMM YYYY')}</span>

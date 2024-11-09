@@ -76,7 +76,7 @@ const AddEditNotes = ({ noteData, type, onClose, getAllNotes, showToastMessage }
     return(
         <>
             <div className="relative">
-                <button className="text-white w-10 h-10 rounded-full flex items-center justify-center smooth-transition absolute -top-3 -right-3 hover:bg-lightPurple" 
+                <button className="text-white w-10 h-10 rounded-full flex items-center justify-center smooth-transition absolute -top-3 -right-3 hover:bg-tertiary" 
                     onClick={onClose}>
                     <MdClose className="text-xl"/>
                 </button>
@@ -84,7 +84,7 @@ const AddEditNotes = ({ noteData, type, onClose, getAllNotes, showToastMessage }
                 <div className="flex flex-col gap-2">
                     <label className="input-label">TITLE</label>
                     <input type="text"
-                        className="text-2xl text-background outline-none bg-[#f8f8ff] p-3 rounded-md mt-2 placeholder:text-gray-500"
+                        className="text-2xl text-background outline-none bg-[#FAF9F6] p-3 rounded-md mt-2 placeholder:text-gray-500"
                         placeholder="Go To Gym At 5"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
@@ -94,7 +94,7 @@ const AddEditNotes = ({ noteData, type, onClose, getAllNotes, showToastMessage }
                 <div className="flex flex-col gap-2 mt-4">
                     <label className="input-label">CONTENT</label>
                     <textarea type="text"
-                        className="text-sm text-background outline-none bg-[#f8f8ff] p-2 rounded-md placeholder:text-gray-500"
+                        className="text-sm text-background outline-none bg-[#FAF9F6] p-2 rounded-md placeholder:text-gray-500"
                         placeholder="Content"
                         rows={10}
                         value={content}
