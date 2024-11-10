@@ -69,7 +69,7 @@ const SignUp = () => {
                                 <label className="text-white text-[14px] ml-1">Name</label>
                                 <input 
                                     type="text" 
-                                    placeholder="Name" 
+                                    placeholder="John Doe" 
                                     className="input-box mt-1"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
