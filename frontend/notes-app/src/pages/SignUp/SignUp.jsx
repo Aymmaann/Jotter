@@ -13,49 +13,58 @@ const SignUp = () => {
 
     const navigate = useNavigate()
 
-    const handleSignUp = async(e) => {
-        e.preventDefault()
-
-        if(!name) {
-            setError("Please enter a name")
+    const handleSignUp = async (e) => {
+        e.preventDefault();
+    
+        if (!name) {
+            setError("Please enter a name");
             return;
         }
-        if(!validateEmail(email)) {
-            setError("Please enter a valid email address.")
+        if (!validateEmail(email)) {
+            setError("Please enter a valid email address.");
             return;
         }
-        if(!password) {
-            setError("Please enter a password.")
+    
+        if (!password) {
+            setError("Please enter a password.");
             return;
         }
-        setError("")
-
+        if (password.length < 8) {
+            setError("Password must be at least 8 characters long.");
+            return;
+        }
+        if (!/[!@#$%^&*]/.test(password)) {
+            setError("Password must contain at least one special character (e.g., !@#$%^&*).");
+            return;
+        }
+    
+        setError(""); 
+    
         try {
             const response = await axiosInstance.post("/create-account", {
                 fullName: name,
                 email: email,
                 password: password,
             });
-
-            if(response.data && response.data.error) {
-                setError(response.data.message)
-                return
+    
+            if (response.data && response.data.error) {
+                setError(response.data.message);
+                return;
             }
-
-            if(response.data && response.data.accessToken) {
-                localStorage.setItem("token", response.data.accessToken)
-                navigate('/dashboard')
+    
+            if (response.data && response.data.accessToken) {
+                localStorage.setItem("token", response.data.accessToken);
+                navigate('/dashboard');
             }
-        }
-        catch(error) {
-            if(error.response && error.response.data && error.response.data.message) {
-                setError(error.response.data.message)
-            }
-            else {
-                setError("An unexpected error occured. Please try again.")
+        } catch (error) {
+            if (error.response && error.response.data && error.response.data.message) {
+                setError(error.response.data.message);
+            } else {
+                setError("An unexpected error occurred. Please try again.");
             }
         }
-    }
+    };
+    
 
     return(
         <>

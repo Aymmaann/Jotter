@@ -33,3 +33,8 @@ const NoteCard = ({ title, date, content, tags, isPinned, onEdit, onDelete, onPi
 }
 
 export default NoteCard;
+
+
+
+
+
