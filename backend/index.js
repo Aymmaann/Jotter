@@ -15,6 +15,11 @@ const app = express();
 const jwt = require("jsonwebtoken");
 const { authenticateToken } = require("./utilities");
 
+const PORT = 8080;
+app.listen(PORT, () => {
+    console.log(`Server started on http://localhost:${PORT}`);
+});
+
 app.use(express.json());
 
 app.use(
